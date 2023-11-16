@@ -1,0 +1,22 @@
+<li class="border rounded-sm p-2 flex items-center justify-between">
+  <div>
+    <div>
+      <span class="text-slate-400">Task:</span>
+      <span>
+        {{ task.task }}
+      </span>
+    </div>
+    <div>
+      <span class="text-slate-400">Day:</span>
+      <span>
+        {{ task.day }}
+      </span>
+    </div>
+  </div>
+  <button
+    (click)="deleteTask(task)"
+    class="bg-slate-500 rounded-sm p-2 hover:bg-opacity-90"
+  >
+    Delete task
+  </button>
+</li>

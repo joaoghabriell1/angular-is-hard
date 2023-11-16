@@ -1,0 +1,36 @@
+<form (ngSubmit)="onSubmit()" class="mb-4 grid gap-4">
+  <div class="flex flex-col">
+    <label for="task">Task</label>
+    <input
+      class="bg-transparent border rounded-sm p-1"
+      [(ngModel)]="task"
+      type="text"
+      id="task"
+      name="task"
+    />
+  </div>
+  <div class="flex flex-col">
+    <label for="task">Day</label>
+    <input
+      class="bg-transparent border rounded-sm p-1"
+      type="text"
+      [(ngModel)]="day"
+      id="day"
+      name="day"
+    />
+  </div>
+  <div>
+    <label for="reminder">
+      <input
+        [(ngModel)]="reminder"
+        type="checkbox"
+        id="reminder"
+        name="reminder"
+      />
+      Reminder
+    </label>
+  </div>
+  <button type="submit" class="bg-red-500 w-full p-1 rounded-sm my-4">
+    Add task
+  </button>
+</form>
