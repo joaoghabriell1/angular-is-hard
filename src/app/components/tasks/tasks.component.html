@@ -1,8 +1,19 @@
 <app-add-task (onAddTask)="onAddTask($event)"></app-add-task>
+<div class="flex justify-between mb-2">
+  <app-filter-bar
+    (onFilterOnlyReminders)="onFilterOnlyReminders($event)"
+  ></app-filter-bar>
+  <app-pagination-bar
+    [tasks]="tasks"
+    [total_pages]="total_pages"
+    [current_page]="current_page"
+    (changePage)="onChangePage($event)"
+  ></app-pagination-bar>
+</div>
 <ul class="flex flex-col gap-1">
   <app-task-item
     (onDeleteTask)="onDeleteTask(task)"
-    *ngFor="let task of tasks"
+    *ngFor="let task of tasks.slice((current_page - 1) * 5, current_page * 5)"
     [task]="task"
   ></app-task-item>
 </ul>

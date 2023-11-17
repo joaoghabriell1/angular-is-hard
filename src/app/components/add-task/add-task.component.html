@@ -11,25 +11,24 @@
   </div>
   <div class="flex flex-col">
     <label for="task">Day</label>
-    <input
-      class="bg-transparent border rounded-sm p-1"
-      type="text"
-      [(ngModel)]="day"
-      id="day"
-      name="day"
-    />
   </div>
   <div>
-    <label for="reminder">
-      <input
-        [(ngModel)]="reminder"
-        type="checkbox"
-        id="reminder"
-        name="reminder"
-      />
-      Reminder
-    </label>
+    <select [(ngModel)]="day" class="text-black" name="day" id="day">
+      <option class="text-black" value="">Escolha um dia da semana</option>
+      <option class="text-black" *ngFor="let day of days" value="{{ day }}">
+        {{ day }}
+      </option>
+    </select>
   </div>
+  <label for="reminder">
+    <input
+      [(ngModel)]="reminder"
+      type="checkbox"
+      id="reminder"
+      name="reminder"
+    />
+    Reminder
+  </label>
   <button type="submit" class="bg-red-500 w-full p-1 rounded-sm my-4">
     Add task
   </button>

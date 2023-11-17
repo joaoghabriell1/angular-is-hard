@@ -1,0 +1,7 @@
+<div class="border p-1 flex gap-2">
+  <button (click)="onChangePage('prev')" value="prev"><</button>
+  <span>{{ current_page }}</span>
+  <span>...</span>
+  <span>{{ total_pages }}</span>
+  <button (click)="onChangePage('next')" value="next">></button>
+</div>
