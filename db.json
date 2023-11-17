@@ -1,20 +1,31 @@
 {
   "tasks": [
     {
-      "task": "sadj",
-      "day": "Terça",
+      "task": "asd",
+      "day": "Quinta",
       "reminder": false,
       "id": 1
     },
     {
+<<<<<<< HEAD
       "task": "ad",
       "day": "Quarta",
+=======
+      "task": "sad",
+      "day": "Quarta",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "task": "asd",
+      "day": "Sábado",
+>>>>>>> 75fcb4f07f71a2432129d99c0d28452537077d06
       "reminder": true,
       "id": 4
     },
     {
       "task": "asd",
-      "day": "Quinta",
+      "day": "Domingo",
       "reminder": true,
       "id": 5
     }
