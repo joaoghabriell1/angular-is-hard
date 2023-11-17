@@ -7,18 +7,6 @@
       "id": 1
     },
     {
-      "task": "askda",
-      "day": "Terça",
-      "reminder": false,
-      "id": 2
-    },
-    {
-      "task": "adka",
-      "day": "Quarta",
-      "reminder": true,
-      "id": 3
-    },
-    {
       "task": "ad",
       "day": "Quarta",
       "reminder": true,
