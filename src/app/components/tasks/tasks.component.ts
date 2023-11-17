@@ -37,9 +37,14 @@ export class TasksComponent {
   onFilterOnlyReminders(e: boolean): void {
     if (e) {
       this.tasks = this.tasks.filter((task) => task.reminder);
+      this.updateTotalPages();
       return;
     }
-    this.service.getTasks().subscribe((tasks) => (this.tasks = tasks));
+
+    this.service.getTasks().subscribe((tasks) => {
+      this.tasks = tasks;
+      this.updateTotalPages();
+    });
   }
 
   onDeleteTask(e: Task): void {

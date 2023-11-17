@@ -1,34 +1,40 @@
 {
   "tasks": [
     {
-      "task": "sadj",
-      "day": "Terça",
+      "task": "asd",
+      "day": "Quinta",
       "reminder": false,
       "id": 1
     },
     {
-      "task": "askda",
-      "day": "Terça",
+      "task": "sad",
+      "day": "Quarta",
       "reminder": false,
       "id": 2
     },
     {
-      "task": "adka",
-      "day": "Quarta",
-      "reminder": true,
+      "task": "asd",
+      "day": "Sábado",
+      "reminder": false,
       "id": 3
     },
     {
-      "task": "ad",
-      "day": "Quarta",
+      "task": "asd",
+      "day": "Sábado",
       "reminder": true,
       "id": 4
     },
     {
       "task": "asd",
-      "day": "Quinta",
+      "day": "Domingo",
       "reminder": true,
       "id": 5
+    },
+    {
+      "task": "sad",
+      "day": "Sábado",
+      "reminder": false,
+      "id": 6
     }
   ]
 }
