@@ -15,12 +15,6 @@
     {
       "task": "asd",
       "day": "Sábado",
-      "reminder": false,
-      "id": 3
-    },
-    {
-      "task": "asd",
-      "day": "Sábado",
       "reminder": true,
       "id": 4
     },
@@ -29,12 +23,6 @@
       "day": "Domingo",
       "reminder": true,
       "id": 5
-    },
-    {
-      "task": "sad",
-      "day": "Sábado",
-      "reminder": false,
-      "id": 6
     }
   ]
 }
